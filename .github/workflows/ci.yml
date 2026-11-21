@@ -24,7 +24,7 @@ jobs:
       # Once you commit package-lock.json, switch to `npm ci` and add `cache: npm` above.
       - run: npm install --no-audit --no-fund
       - run: npm run build
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: dist
           path: dist
