@@ -31,15 +31,15 @@ function seed() {
   const P = lastPeriods(6).map((p) => p.key);
   const mk = (id, name, email, phone, salary, role = "member", status = "active") => ({ id, name, email, phone, salary, role, status, password: "password" });
   const users = [
-    mk("u1", "Jane Wanjiku", "jane@birch.test", "0712345678", 85000),
-    mk("u2", "Peter Otieno", "peter@birch.test", "0722111222", 120000),
-    mk("u3", "Amina Hassan", "amina@birch.test", "0733222333", 95000),
-    mk("u4", "David Kiprop", "david@birch.test", "0711333444", 70000),
-    mk("u5", "Grace Njeri", "grace@birch.test", "0700444555", 150000),
-    mk("u6", "Faith Mwende", "faith@birch.test", "0799555666", 60000, "member", "pending"),
-    mk("u0", "Mary Achieng", "mary@birch.test", "0701000111", 110000, "officer"),
-    mk("a1", "Samuel Mutua", "admin@birch.test", "0702000222", 130000, "admin"),
-    mk("s1", "Joseph Karanja", "super@birch.test", "0703000333", 150000, "super_admin"),
+    mk("u1", "Jane Wanjiku", "jane@birch.com", "0712345678", 85000),
+    mk("u2", "Peter Otieno", "peter@birch.com", "0722111222", 120000),
+    mk("u3", "Amina Hassan", "amina@birch.com", "0733222333", 95000),
+    mk("u4", "David Kiprop", "david@birch.com", "0711333444", 70000),
+    mk("u5", "Grace Njeri", "grace@birch.com", "0700444555", 150000),
+    mk("u6", "Faith Mwende", "meber@birch.com", "0799555666", 60000, "member", "pending"),
+    mk("u0", "Mary Achieng", "officer@birch.com", "0701000111", 110000, "officer"),
+    mk("a1", "Samuel Mutua", "admin@birch.com", "0702000222", 130000, "admin"),
+    mk("s1", "Joseph Karanja", "super@birch.com", "0703000333", 150000, "super_admin"),
   ];
   const VOL = { u1: [[2, 5000], [4, 3000]], u2: [[1, 20000], [3, 10000]], u3: [[2, 15000]], u4: [], u5: [[0, 30000], [4, 20000]], u0: [[1, 5000]], a1: [[3, 8000]], s1: [[2, 10000]] };
   const contributions = [];
